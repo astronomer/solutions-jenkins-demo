@@ -1,7 +1,7 @@
 pipeline {
  agent any
        environment {
-        $SERVICE_ACCOUNT_KEY     = credentials('astro-service-account-key')
+        SERVICE_ACCOUNT_KEY     = credentials('astro-service-account-key')
     }
    stages {
      stage('Deploy to astronomer') {
