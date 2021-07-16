@@ -5,8 +5,8 @@ pipeline {
        when { branch 'master' }
        environment {
         SERVICE_ACCOUNT_KEY     = credentials('astro-prod-service-account-key')
-        REGISTRY_URL            = "registry.polaris.astronomerdemo.com"
-        RELEASE_NAME            = "planetoidal-planet-3558"
+        REGISTRY_URL            = "registry.astro.floral.philippe.gg"
+        RELEASE_NAME            = "jenkins-prod"
        }
        steps {
          script {
@@ -21,8 +21,8 @@ pipeline {
        when { branch 'develop' }
        environment {
         SERVICE_ACCOUNT_KEY     = credentials('astro-dev-service-account-key')
-        REGISTRY_URL            = "registry.polaris.astronomerdemo.com"
-        RELEASE_NAME            = "infrared-comet-4238"
+        REGISTRY_URL            = "registry.astro.floral.philippe.gg"
+        RELEASE_NAME            = "jenkins"
        }
        steps {
          script {
